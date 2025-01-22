@@ -1,0 +1,332 @@
+Microsoft Windows [Version 10.0.22631.4751]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\sophi>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 6800-52B4
+
+ Directory of C:\Users\sophi
+
+08/14/2024  10:30 AM    <DIR>          .
+09/27/2023  11:39 PM    <DIR>          ..
+01/16/2024  04:04 PM               209 .gitconfig
+09/28/2023  06:37 PM    <DIR>          .ms-ad
+09/27/2023  11:22 PM    <DIR>          Contacts
+04/28/2024  07:18 PM    <DIR>          Creative Cloud Files Personal Account sophie.sproull@umontana.edu 28C97A566336133F0A495FED@AdobeID
+01/20/2025  09:56 PM    <DIR>          Documents
+01/20/2025  08:01 PM    <DIR>          Downloads
+09/27/2023  11:22 PM    <DIR>          Favorites
+09/27/2023  11:22 PM    <DIR>          Links
+09/27/2023  11:22 PM    <DIR>          Music
+01/19/2025  10:45 PM    <DIR>          OneDrive
+09/27/2023  11:22 PM    <DIR>          Saved Games
+09/27/2023  11:39 PM    <DIR>          Searches
+09/28/2023  12:43 PM    <DIR>          Videos
+               1 File(s)            209 bytes
+              14 Dir(s)  40,747,388,928 bytes free
+
+C:\Users\sophi>cd Documents
+
+C:\Users\sophi\Documents>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 6800-52B4
+
+ Directory of C:\Users\sophi\Documents
+
+01/20/2025  09:56 PM    <DIR>          .
+08/14/2024  10:30 AM    <DIR>          ..
+01/20/2025  10:00 PM    <DIR>          DirectoryA
+01/20/2025  09:52 PM    <DIR>          Dorectory3
+01/20/2025  09:42 PM    <DIR>          Downloads
+01/20/2025  09:46 PM    <DIR>          Favorites
+01/20/2025  09:53 PM                 0 file1
+               1 File(s)              0 bytes
+               6 Dir(s)  40,747,335,680 bytes free
+
+C:\Users\sophi\Documents>rmdir Dorectory3
+
+C:\Users\sophi\Documents>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 6800-52B4
+
+ Directory of C:\Users\sophi\Documents
+
+01/20/2025  10:01 PM    <DIR>          .
+08/14/2024  10:30 AM    <DIR>          ..
+01/20/2025  10:00 PM    <DIR>          DirectoryA
+01/20/2025  09:42 PM    <DIR>          Downloads
+01/20/2025  09:46 PM    <DIR>          Favorites
+01/20/2025  09:53 PM                 0 file1
+               1 File(s)              0 bytes
+               5 Dir(s)  40,752,029,696 bytes free
+
+C:\Users\sophi\Documents>move Favorites DirectoryA
+        1 dir(s) moved.
+
+C:\Users\sophi\Documents>cd DirectoryA
+
+C:\Users\sophi\Documents\DirectoryA>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 6800-52B4
+
+ Directory of C:\Users\sophi\Documents\DirectoryA
+
+01/20/2025  10:01 PM    <DIR>          .
+01/20/2025  10:01 PM    <DIR>          ..
+01/20/2025  09:46 PM    <DIR>          Favorites
+01/20/2025  10:00 PM                 0 file1
+               1 File(s)              0 bytes
+               3 Dir(s)  40,750,821,376 bytes free
+
+C:\Users\sophi\Documents\DirectoryA>ren file1 fileA
+
+C:\Users\sophi\Documents\DirectoryA>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 6800-52B4
+
+ Directory of C:\Users\sophi\Documents\DirectoryA
+
+01/20/2025  10:02 PM    <DIR>          .
+01/20/2025  10:01 PM    <DIR>          ..
+01/20/2025  09:46 PM    <DIR>          Favorites
+01/20/2025  10:00 PM                 0 fileA
+               1 File(s)              0 bytes
+               3 Dir(s)  40,750,792,704 bytes free
+
+C:\Users\sophi\Documents\DirectoryA>del fileA
+
+C:\Users\sophi\Documents\DirectoryA>touch file2
+'touch' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\sophi\Documents\DirectoryA>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 6800-52B4
+
+ Directory of C:\Users\sophi\Documents\DirectoryA
+
+01/20/2025  10:02 PM    <DIR>          .
+01/20/2025  10:01 PM    <DIR>          ..
+01/20/2025  09:46 PM    <DIR>          Favorites
+               0 File(s)              0 bytes
+               3 Dir(s)  40,748,228,608 bytes free
+
+C:\Users\sophi\Documents\DirectoryA>cat > file2
+'cat' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\sophi\Documents\DirectoryA>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 6800-52B4
+
+ Directory of C:\Users\sophi\Documents\DirectoryA
+
+01/20/2025  10:03 PM    <DIR>          .
+01/20/2025  10:01 PM    <DIR>          ..
+01/20/2025  09:46 PM    <DIR>          Favorites
+01/20/2025  10:03 PM                 0 file2
+               1 File(s)              0 bytes
+               3 Dir(s)  40,748,228,608 bytes free
+
+C:\Users\sophi\Documents\DirectoryA>move file2 Documents
+        1 file(s) moved.
+
+C:\Users\sophi\Documents\DirectoryA>cd Documents
+The directory name is invalid.
+
+C:\Users\sophi\Documents\DirectoryA>cd -
+The system cannot find the path specified.
+
+C:\Users\sophi\Documents\DirectoryA>cd ..
+
+C:\Users\sophi\Documents>dirt
+'dirt' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\sophi\Documents>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 6800-52B4
+
+ Directory of C:\Users\sophi\Documents
+
+01/20/2025  10:01 PM    <DIR>          .
+08/14/2024  10:30 AM    <DIR>          ..
+01/20/2025  10:03 PM    <DIR>          DirectoryA
+01/20/2025  09:42 PM    <DIR>          Downloads
+01/20/2025  09:53 PM                 0 file1
+               1 File(s)              0 bytes
+               4 Dir(s)  40,757,899,264 bytes free
+
+C:\Users\sophi\Documents>cd Directory A
+The system cannot find the path specified.
+
+C:\Users\sophi\Documents>cd DirectoryA
+
+C:\Users\sophi\Documents\DirectoryA>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 6800-52B4
+
+ Directory of C:\Users\sophi\Documents\DirectoryA
+
+01/20/2025  10:03 PM    <DIR>          .
+01/20/2025  10:01 PM    <DIR>          ..
+01/20/2025  10:03 PM                 0 Documents
+01/20/2025  09:46 PM    <DIR>          Favorites
+               1 File(s)              0 bytes
+               3 Dir(s)  40,757,649,408 bytes free
+
+C:\Users\sophi\Documents\DirectoryA>cd ..
+
+C:\Users\sophi\Documents>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 6800-52B4
+
+ Directory of C:\Users\sophi\Documents
+
+01/20/2025  10:01 PM    <DIR>          .
+08/14/2024  10:30 AM    <DIR>          ..
+01/20/2025  10:03 PM    <DIR>          DirectoryA
+01/20/2025  09:42 PM    <DIR>          Downloads
+01/20/2025  09:53 PM                 0 file1
+               1 File(s)              0 bytes
+               4 Dir(s)  40,757,641,216 bytes free
+
+C:\Users\sophi\Documents>del DirectoryA
+C:\Users\sophi\Documents\DirectoryA\*, Are you sure (Y/N)? y
+
+C:\Users\sophi\Documents>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 6800-52B4
+
+ Directory of C:\Users\sophi\Documents
+
+01/20/2025  10:01 PM    <DIR>          .
+08/14/2024  10:30 AM    <DIR>          ..
+01/20/2025  10:05 PM    <DIR>          DirectoryA
+01/20/2025  09:42 PM    <DIR>          Downloads
+01/20/2025  09:53 PM                 0 file1
+               1 File(s)              0 bytes
+               4 Dir(s)  40,748,593,152 bytes free
+
+C:\Users\sophi\Documents>del DirectoryA
+C:\Users\sophi\Documents\DirectoryA\*, Are you sure (Y/N)? Y
+
+C:\Users\sophi\Documents>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 6800-52B4
+
+ Directory of C:\Users\sophi\Documents
+
+01/20/2025  10:01 PM    <DIR>          .
+08/14/2024  10:30 AM    <DIR>          ..
+01/20/2025  10:05 PM    <DIR>          DirectoryA
+01/20/2025  09:42 PM    <DIR>          Downloads
+01/20/2025  09:53 PM                 0 file1
+               1 File(s)              0 bytes
+               4 Dir(s)  40,748,580,864 bytes free
+
+C:\Users\sophi\Documents>rmdir DirectoryA
+The directory is not empty.
+
+C:\Users\sophi\Documents>cd DirectoryA
+
+C:\Users\sophi\Documents\DirectoryA>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 6800-52B4
+
+ Directory of C:\Users\sophi\Documents\DirectoryA
+
+01/20/2025  10:05 PM    <DIR>          .
+01/20/2025  10:01 PM    <DIR>          ..
+01/20/2025  09:46 PM    <DIR>          Favorites
+               0 File(s)              0 bytes
+               3 Dir(s)  40,732,123,136 bytes free
+
+C:\Users\sophi\Documents\DirectoryA>rmdir .
+The process cannot access the file because it is being used by another process.
+
+C:\Users\sophi\Documents\DirectoryA>rmdir Favorites
+
+C:\Users\sophi\Documents\DirectoryA>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 6800-52B4
+
+ Directory of C:\Users\sophi\Documents\DirectoryA
+
+01/20/2025  10:07 PM    <DIR>          .
+01/20/2025  10:01 PM    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  40,762,277,888 bytes free
+
+C:\Users\sophi\Documents\DirectoryA>cd ..
+
+C:\Users\sophi\Documents>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 6800-52B4
+
+ Directory of C:\Users\sophi\Documents
+
+01/20/2025  10:01 PM    <DIR>          .
+08/14/2024  10:30 AM    <DIR>          ..
+01/20/2025  10:07 PM    <DIR>          DirectoryA
+01/20/2025  09:42 PM    <DIR>          Downloads
+01/20/2025  09:53 PM                 0 file1
+               1 File(s)              0 bytes
+               4 Dir(s)  40,762,261,504 bytes free
+
+C:\Users\sophi\Documents>rmdir DirectoryA
+
+C:\Users\sophi\Documents>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 6800-52B4
+
+ Directory of C:\Users\sophi\Documents
+
+01/20/2025  10:07 PM    <DIR>          .
+08/14/2024  10:30 AM    <DIR>          ..
+01/20/2025  09:42 PM    <DIR>          Downloads
+01/20/2025  09:53 PM                 0 file1
+               1 File(s)              0 bytes
+               3 Dir(s)  40,762,261,504 bytes free
+
+C:\Users\sophi\Documents>rmdir Downloads
+
+C:\Users\sophi\Documents>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 6800-52B4
+
+ Directory of C:\Users\sophi\Documents
+
+01/20/2025  10:07 PM    <DIR>          .
+08/14/2024  10:30 AM    <DIR>          ..
+01/20/2025  09:53 PM                 0 file1
+               1 File(s)              0 bytes
+               2 Dir(s)  40,762,195,968 bytes free
+
+C:\Users\sophi\Documents>cd ..
+
+C:\Users\sophi>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 6800-52B4
+
+ Directory of C:\Users\sophi
+
+08/14/2024  10:30 AM    <DIR>          .
+09/27/2023  11:39 PM    <DIR>          ..
+01/16/2024  04:04 PM               209 .gitconfig
+09/28/2023  06:37 PM    <DIR>          .ms-ad
+09/27/2023  11:22 PM    <DIR>          Contacts
+04/28/2024  07:18 PM    <DIR>          Creative Cloud Files Personal Account sophie.sproull@umontana.edu 28C97A566336133F0A495FED@AdobeID
+01/20/2025  10:07 PM    <DIR>          Documents
+01/20/2025  08:01 PM    <DIR>          Downloads
+09/27/2023  11:22 PM    <DIR>          Favorites
+09/27/2023  11:22 PM    <DIR>          Links
+09/27/2023  11:22 PM    <DIR>          Music
+01/19/2025  10:45 PM    <DIR>          OneDrive
+09/27/2023  11:22 PM    <DIR>          Saved Games
+09/27/2023  11:39 PM    <DIR>          Searches
+09/28/2023  12:43 PM    <DIR>          Videos
+               1 File(s)            209 bytes
+              14 Dir(s)  40,762,261,504 bytes free
+
+C:\Users\sophi>
