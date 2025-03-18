@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Contact Form</title>
+        <style>
+            .error {
+                border: 1px solid red;
+            }
+        </style>
+    </head>
+<body>
+    <h1>Contact Us!</h1>
+    <h2>Please include your full name and email.</h2>
+    <span>Note: Please enter the full name of the movie and the year it was released.</span>
+    <br />
+    <form id="contactForm">
+        Name: <input type="text" name="Name" /><br />
+        Email: <input type="text" name="Email" /><br />
+        Comments/Questions/Concerns: <input type="text" name="Comments" height="75" width="200" /><br />
+        <button type="submit">Enter</button>
+    </form>
+
+    <p>
+        <a href="websitehomepage.html">Back to Home</a>
+        <a href="myfavoritemovies.html">My Favorite Movies</a>
+        <a href="movieform.html">Movie Form</a>
+    </p>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            var isValid = true;
+            var firstInvalidInput = null;
+            document.querySelectorAll('#contactForm input[type="text"]').forEach(function(input) {
+                if (!input.value.trim()) {
+                    input.classList.add('error');
+                    if (!firstInvalidInput) {
+                        firstInvalidInput = input;
+                    }
+                    isValid = false;
+                } else {
+                    input.classList.remove('error');
+                }
+            });
+            if (!isValid) {
+                event.preventDefault();
+                firstInvalidInput.focus();
+            }
+        });
+    </script>
+</body>
+</html>

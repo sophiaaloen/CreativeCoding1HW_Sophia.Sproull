@@ -1,0 +1,19 @@
+.green {
+    color: rgb(166, 228, 166);
+    background-color: rgb(2, 48, 8);
+}
+
+p {
+    font-family: Arial;
+}
+
+#secondary {
+    color: rgb(166, 228, 166);
+    background-color: rgb(2, 48, 8);
+    font-size: 1.2em;
+}
+
+#tertiary {
+    color: rgb(2,48, 8);
+    font-size: 1.6em;
+}
