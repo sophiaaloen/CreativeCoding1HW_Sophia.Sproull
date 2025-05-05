@@ -5,23 +5,26 @@ let powerOn = false;
 let powerButton;
 let volumeSlider;
 
+let panelX, panelY;
+let panelWidth = 420;
+let panelHeight = 580;
+
 function preload() {
   for (let i = 0; i < 9; i++) {
-    sounds[i] = loadSound('sounds/sound' + i + '.wav');
+    sounds[i] = loadSound('sounds/sound' + i + '.wav'); // Change extension if needed
   }
 }
 
 function setup() {
-  createCanvas(600, 700);
-  background(220);
+  createCanvas(windowWidth, windowHeight);
+
+  buttons = [];
+
+  panelX = (width - panelWidth) / 2;
+  panelY = (height - panelHeight) / 2;
 
   let buttonSize = 100;
   let padding = 20;
-  let panelWidth = 420;
-  let panelHeight = 580;
-  let panelX = (width - panelWidth) / 2;
-  let panelY = 30;
-
   let startX = panelX + (panelWidth - (buttonSize * 3 + padding * 2)) / 2;
   let startY = panelY + 30;
 
@@ -40,11 +43,6 @@ function setup() {
 
 function draw() {
   background(220);
-
-  let panelWidth = 420;
-  let panelHeight = 580;
-  let panelX = (width - panelWidth) / 2;
-  let panelY = 30;
 
   fill(10, 10, 50);
   noStroke();
@@ -75,6 +73,11 @@ function mousePressed() {
     btn.handleClick(mouseX, mouseY);
   }
   powerButton.handleClick(mouseX, mouseY);
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+  setup(); // Recalculate positions
 }
 
 class SoundButton {
